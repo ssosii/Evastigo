@@ -23,8 +23,6 @@ class Header extends Component {
           activeElement: this.state.activeElement + 1,
         });
       }
-
-      console.log(this.state.activeElement);
     }, 3000);
   }
 
@@ -33,7 +31,7 @@ class Header extends Component {
       <>
         <div className="header">
           <Navigation />
-          <video id="background-video" loop autoPlay>
+          <video id="background-video" autoPlay muted loop="loop">
             <source src={CityVideo} type="video/mp4" />
             <source src={CityVideo} type="video/ogg" />
             Your browser does not support the video tag.
