@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 5vh;
+    line-height: 5vh;
+    background: #004a6e;
+    background: linear-gradient(90deg, #004a6e 0%, #004a6e 35%, #008dd2 100%);
+
+    img {
+        height: 3vh;
+        vertical-align: middle;
+        margin-left: 15px;
+    }
+}
