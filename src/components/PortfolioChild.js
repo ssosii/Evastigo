@@ -1,15 +1,29 @@
-import React from "react";
+import React, {  useState } from "react";
+import "../styles/Portfolio.scss";
 
-const PortfolioChild = (props) => {
+const PortfolioChild = ({ link, text, img }) => {
+  const [isShowDescription, setIsShowDescription] = useState(true);
+
+  const onClickShowDescription = () => {
+    console.log(isShowDescription);
+    setIsShowDescription(!isShowDescription);
+  };
+
   return (
-    <div onClick={props.onClick} className="portfolio-box">
-      <div className="describe">
-        <a href={props.link}>{props.text}</a>
+    <div onClick={onClickShowDescription} className="portfolio-box">
+      <div
+        className={`describe ${
+          isShowDescription ? "describe--visible" : ""
+        }`}
+      >
+        <a href={link}>{text}</a>
       </div>
-      <div ref={props.ref} className="more_info">
-        <i className="far fa-plus-square"></i>
+      <div className="more_info">
+        {/* <i className="far fa-plus-square"></i> */}
+        {isShowDescription && <i className="far fa-plus-square"></i>}
+        {!isShowDescription && <i className="far fa-minus-square"></i>}
       </div>
-      <img src={props.img} alt="" srcset="" />
+      <img src={img} alt="" srcset="" />
     </div>
   );
 };
