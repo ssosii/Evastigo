@@ -1,7 +1,6 @@
 import React from "react";
 import TeamMember from "../components/TeamMember";
 import "../styles/Team.scss";
-
 import lukasz from "../img/lukasz.png";
 import sebastian from "../img/sebastian.png";
 import maciej from "../img/maciej.png";
@@ -9,7 +8,6 @@ import maciej from "../img/maciej.png";
 const Team = () => {
   return (
     <div className="team">
-      <h4>Nasz zespół</h4>
       <div className="team-container">
         <TeamMember
           img={maciej}

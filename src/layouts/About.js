@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles/About.scss";
 import aboutimg from "../img/about.svg";
 import AtutContent from "../components/AtutContent";
+import Background from "../img/19366.jpg";
 import img1 from "../img/01.svg";
 import img2 from "../img/02.svg";
 import img3 from "../img/03.svg";
@@ -14,13 +15,22 @@ import img8 from "../img/08.svg";
 class About extends Component {
   state = {};
 
+  aboutimg = {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100vh",
+    transform: "scale(1.1)",
+    // backgroundImage: `url(../img/19366.jpg)`,
+    backgroundImage: `url(${Background})`,
+    backgroundSize: "cover",
+  };
   listenerref = React.createRef();
   imgref = React.createRef();
 
   bgcAnimation = (e) => {
-    // this.imgref.current.style.backgroundPositionX = -e.offsetX / 100 + "px";
-    // this.imgref.current.style.backgroundPositionY = -e.offsetY / 100 + "px";
-    console.log(this.imgref.current.style.ba);
+    console.log(e.target);
   };
 
   render() {
@@ -96,12 +106,8 @@ class About extends Component {
           </div>
         </div>
 
-        <div
-          onPointerMove={this.bgcAnimation}
-          ref={this.listenerref}
-          className="listener"
-        ></div>
-        <div ref={this.imgref} className="about-img"></div>
+        <div onPointerMove={this.bgcAnimation} className="listener"></div>
+        <div style={this.aboutimg} ref={this.imgref}></div>
       </div>
     );
   }
