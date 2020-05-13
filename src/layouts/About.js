@@ -25,7 +25,9 @@ class About extends Component {
       this.setState({
         position: window.scrollY,
       });
-      if (this.state.position > this.myRef.current.offsetTop) {
+      if (
+        this.state.position >= this.myRef.current.getBoundingClientRect().top
+      ) {
         this.style = "atut showUp";
       }
       console.log(this.state.position);
