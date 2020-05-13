@@ -6,7 +6,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        Copyright 2020 <img src={LogoWhite} alt="logo-white" />
+        Copyright 2020 - Wszelkie Prawa Zastrzeżone{" "}
+        <img src={LogoWhite} alt="logo-white" />
       </p>
     </div>
   );

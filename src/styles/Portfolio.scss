@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: auto;
-
+    padding-bottom: 5%;
     z-index: 1;
     background: #004a6e;
     background: linear-gradient(#004a6e 0%, #004a6e 35%, #008dd2 100%);
@@ -19,6 +19,13 @@
         align-items: center;
 
         flex-wrap: wrap;
+
+        .portfolio-img {
+            flex-basis: 100%;
+            justify-content: left;
+            padding: 35px 0 35px;
+
+        }
 
 
         .portfolio-box {
@@ -42,12 +49,14 @@
                 font-size: 2rem;
                 opacity: 1;
                 z-index: 2;
-                outline:10px solid yellow;
-                &--visible{
+                outline: 10px solid yellow;
+
+                &--visible {
                     opacity: 0;
-                    outline:10px solid red;
+                    outline: 10px solid red;
                 }
             }
+
             .more_info {
                 position: absolute;
                 top: 0px;

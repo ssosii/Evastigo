@@ -36,18 +36,21 @@
             .about-txt-2 {
                 flex-basis: 50%;
                 flex-wrap: wrap;
+       
             }
 
             .about-txt-1 {
                 flex-basis: 50%;
                 flex-wrap: wrap;
+           
+
 
                 .atut {
                     flex-basis: 100%;
                     margin-top: 20px;
                     display: flex;
                     transition: 0.9s;
-                    // transform: translate(300%, 0);
+                    transform: translate(300%, 0);
 
                     .atut-img {
                         flex-basis: 30%;

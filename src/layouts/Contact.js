@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Contact.scss";
 import pl from "../img/pl.svg";
 import bg from "../img/bg.svg";
+import contact from "../img/contact.svg";
 
 const Contact = () => {
   let style = {
@@ -11,6 +12,8 @@ const Contact = () => {
   };
   return (
     <div id="contact" class="contact">
+      <img className="contact-img" src={contact} alt="contact-img"></img>
+
       <div class="contact-box">
         <span style={style}>
           <b>Masz pytania?</b> Skontaktuj sie z nami:

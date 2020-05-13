@@ -36,16 +36,16 @@ class Header extends Component {
             <source src={CityVideo} type="video/ogg" />
             Your browser does not support the video tag.
           </video>
-          <div class="overlay"></div>
-          <div class="offer-sign">
+          <div className="overlay"></div>
+          <div className="offer-sign">
             <img
-              class="offer-sign-image"
+              className="offer-sign-image"
               src={this.state.images[this.state.activeElement]}
               alt=""
             />
           </div>
-          <div class="down-button">
-            <img class="rubberBand" src={arrow} alt="" srcset="" />
+          <div className="down-button">
+            <img className="rubberBand" src={arrow} alt="" srcset="" />
           </div>
         </div>
       </>
