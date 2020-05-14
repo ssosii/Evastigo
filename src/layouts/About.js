@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/About.scss";
+
 import aboutimg from "../img/about.svg";
 import AtutContent from "../components/AtutContent";
 // import Background from "../img/19366.jpg";
@@ -30,8 +30,15 @@ class About extends Component {
       ) {
         this.style = "atut showUp";
       }
-      console.log(this.state.position);
-      console.log(this.myRef.current.offsetTop);
+    });
+  }
+  
+  animationFigures() {
+    const el = this.myRef.current.querySelector(".about-img");
+    let listener = this.myRef.current.querySelector(".listener");
+    listener.addEventListener("mousemove", (e) => {
+      el.style.backgroundPositionX = -e.offsetX / 100 + "px";
+      el.style.backgroundPositionY = -e.offsetY / 100 + "px";
     });
   }
 
@@ -42,6 +49,8 @@ class About extends Component {
         ref={this.myRef}
         id="about"
         className="about"
+        onMouseMove={this.animationFigures.bind(this)}
+        
       >
         <div className="about-box-1">
           <span>

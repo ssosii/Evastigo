@@ -1,6 +1,6 @@
 import React from "react";
 import TeamMember from "../components/TeamMember";
-import "../styles/Team.scss";
+
 import lukasz from "../img/lukasz.png";
 import sebastian from "../img/sebastian.png";
 import maciej from "../img/maciej.png";

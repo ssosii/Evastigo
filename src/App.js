@@ -7,6 +7,8 @@ import Team from "./layouts/Team";
 import Footer from "./layouts/Footer";
 import Contact from "./layouts/Contact";
 import "./styles/App.scss";
+import "./styles/abstracts/_variables.scss";
+import "./styles/abstracts/_mixins.scss";
 
 function App() {
   return (

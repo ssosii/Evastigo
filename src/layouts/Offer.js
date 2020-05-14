@@ -1,6 +1,6 @@
 import React from "react";
 import Offerbox from "../components/Offerbox";
-import "../styles/Offer.scss";
+
 import logo from "../img/logo_white2.svg";
 import graphic from "../img/graphic_white.svg";
 import code from "../img/code_white.svg";

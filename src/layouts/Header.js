@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Navigation from "../components/Navigation";
-import "../styles/Header.scss";
+import MenuResponsive from "../components/MenuResponsive";
 import CityVideo from "../video/city.mp4";
 import OfferImg1 from "../img/offer.svg";
 import OfferImg2 from "../img/offer2.svg";
@@ -10,6 +10,7 @@ class Header extends Component {
   state = {
     activeElement: 0,
     images: [OfferImg1, OfferImg2],
+    isMenuResponsive: false,
   };
 
   componentDidMount() {
@@ -26,11 +27,21 @@ class Header extends Component {
     }, 3000);
   }
 
+  handleMenuResponsive = (value) => {
+    this.setState({
+      isMenuResponsive: value,
+    });
+    console.log(this.state.isMenuResponsive);
+  };
+
   render() {
     return (
       <>
         <div className="header">
-          <Navigation />
+          <Navigation
+            handleMenuResponsive={this.handleMenuResponsive}
+            isMenuResponsive={this.state.isMenuResponsive}
+          />
           <video id="background-video" autoPlay muted loop="loop">
             <source src={CityVideo} type="video/mp4" />
             <source src={CityVideo} type="video/ogg" />
@@ -48,6 +59,11 @@ class Header extends Component {
             <img className="rubberBand" src={arrow} alt="" srcset="" />
           </div>
         </div>
+
+        <MenuResponsive
+          isMenuResponsive={this.state.isMenuResponsive}
+          handleMenuResponsive={this.handleMenuResponsive}
+        />
       </>
     );
   }

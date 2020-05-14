@@ -3,7 +3,7 @@
 import React from "react";
 
 import PortfolioChild from "../components/PortfolioChild";
-import "../styles/Portfolio.scss";
+
 import edugrupa from "../img/mocup/edugrupa.jpg";
 import prius from "../img/mocup/prius.jpg";
 import biota from "../img/mocup/biota.jpg";

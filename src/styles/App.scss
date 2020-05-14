@@ -1,3 +1,15 @@
+@import './abstracts/_mixins.scss';
+@import './abstracts/_variables.scss';
+
+@import './Header.scss';
+@import './MenuResponsive.scss';
+@import './About.scss';
+@import './Contact.scss';
+@import './Footer.scss';
+@import './Offer.scss';
+@import './Portfolio.scss';
+@import './Team.scss';
+
 * {
     margin: 0;
     padding: 0;

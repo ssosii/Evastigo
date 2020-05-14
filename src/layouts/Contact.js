@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Contact.scss";
 import pl from "../img/pl.svg";
 import bg from "../img/bg.svg";
 import contact from "../img/contact.svg";
@@ -85,7 +84,7 @@ const Contact = () => {
         </form>
       </div>
 
-      <div class="contact-box">
+      <div class="contact-box contact-box--destination">
         <div class="contact-box-pl">
           <img src={pl} alt="" />
 

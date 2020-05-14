@@ -8,6 +8,9 @@
     flex-wrap: wrap;
     padding: 10px 20px;
     justify-content: center;
+    @include mobile() {
+        padding: 0;
+    }
 
     h4 {
         flex-basis: 100%;
@@ -22,6 +25,9 @@
         color: white;
         text-align: center;
         flex-wrap: wrap;
+        @include mobile() {
+            width:80%;
+        }
 
         .team-img {
             flex-basis: 100%;
@@ -34,6 +40,9 @@
 
         .member {
             flex-basis: 30%;
+            @include mobile() {
+                flex-basis: auto;
+            }
 
         }
 

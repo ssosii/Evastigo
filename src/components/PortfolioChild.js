@@ -1,5 +1,5 @@
 import React, {  useState } from "react";
-import "../styles/Portfolio.scss";
+
 
 const PortfolioChild = ({ link, text, img }) => {
   const [isShowDescription, setIsShowDescription] = useState(true);
