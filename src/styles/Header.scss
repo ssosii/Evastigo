@@ -3,6 +3,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  z-index: 2;
 
   .overlay {
     position: absolute;
@@ -38,6 +39,9 @@
     img {
       width: 100%;
       animation: off 5s linear infinite;
+    }
+    @include mobile(){
+      width:280px;
     }
   }
 }
