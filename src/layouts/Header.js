@@ -69,10 +69,6 @@ class Header extends Component {
           isMenuResponsive={this.state.isMenuResponsive}
           handleMenuResponsive={this.handleMenuResponsive}
         />
-
-        <Translation>
-          {(t, { i18n }) => <p>{t("Welcome to React")}</p>}
-        </Translation>
       </>
     );
   }

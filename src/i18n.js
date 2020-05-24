@@ -34,10 +34,10 @@ const resources = {
     "10 lat doświadczenia w poligrafii": "10 lat doświadczenia w poligrafii",
     "Silnik naszego zespołu. Dokładniej twórca silników. Odpowiedzialny za to, żeby klient mógł łatwo zarządzać swoją stroną. Pasjonat Jury Krakowsko-Częstochowskiej, gdzie spędza większość weekendów.":
       "Silnik naszego zespołu. Dokładniej twórca silników. Odpowiedzialny za to, żeby klient mógł łatwo zarządzać swoją stroną. Pasjonat Jury Krakowsko-Częstochowskiej, gdzie spędza większość weekendów.",
-    "Lubi wypić. Uważa, że 0.7 na dwóch to nie alkohol":
-      "Lubi wypić. Uważa, że 0.7 na dwóch to nie alkohol",
-    "Odpowiedzialny za to, żeby strona nie była kolejnym nudnym Wordpressem. Podobnie jak Maciek jest pasjonatem Jury Krakowsko-Częstochowskiej. Wolny czas lubi spędzać również przy grach planszowych oraz karciankach.":
-      "Odpowiedzialny za to, żeby strona nie była kolejnym nudnym Wordpressem. Podobnie jak Maciek jest pasjonatem Jury Krakowsko-Częstochowskiej. Wolny czas lubi spędzać również przy grach planszowych oraz karciankach.",
+      'Wyznawca powiedzenia Carpe Diem - "Żyj chwilą" i tak właśnie stara się żyć zarówno przy realizacji nowych projektów jak i w życiu osobistym. Pełen pasji i pomysłów. Zimą wielbiciel narciastwa. Wiosną lubi pieszewędrówki po górach i współne rodzinne wycieczki rowerowe. Kreatywna i pozytywna osoba w naszym zespole.':
+      'Wyznawca powiedzenia Carpe Diem - "Żyj chwilą" i tak właśnie stara się żyć zarówno przy realizacji nowych projektów jak i w życiu osobistym. Pełen pasji i pomysłów. Zimą wielbiciel narciastwa. Wiosną lubi pieszewędrówki po górach i współne rodzinne wycieczki rowerowe. Kreatywna i pozytywna osoba w naszym zespole.',
+      'Odpowiedzialny za to, żeby strona nie była "kolejnym nudnym Wordpressem". W naszym zespole dba o aspekt wiuzalny projektów, a do każdego pochodzi indywidualnie. Wolny czas spędza uprawiająć kolarsto górskie któremu poświęca się od ponad 15 lat, oraz przy grach planszowych i karciankach.':
+      'Odpowiedzialny za to, żeby strona nie była "kolejnym nudnym Wordpressem". W naszym zespole dba o aspekt wiuzalny projektów, a do każdego pochodzi indywidualnie. Wolny czas spędza uprawiająć kolarsto górskie któremu poświęca się od ponad 15 lat, oraz przy grach planszowych i karciankach.',
     "Masz pytania?": "Masz pytania?",
     "Skontaktuj sie z nami": "Skontaktuj sie z nami",
     "Musisz wypełnić imię": "Musisz wypełnić imię",
@@ -48,7 +48,8 @@ const resources = {
     Wiadomość: "Wiadomość",
     "Musisz zaakceptować politykę prywatności": "",
     Wyślij: "Wyślij",
-    "Wszelkie Prawa Zastrzeżone": "Wszelkie Prawa Zastrzeżone"
+    "Wszelkie Prawa Zastrzeżone": "Wszelkie Prawa Zastrzeżone",
+    "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych oraz ogólnym rozporządzeniem o ochronie danych osobowych w związku z realizacją zgłoszenia. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem/am poinformowany/a, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Evastigo.":"Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych oraz ogólnym rozporządzeniem o ochronie danych osobowych w związku z realizacją zgłoszenia. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem/am poinformowany/a, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Evastigo."
   },
   bu: {
     translation: {
@@ -76,8 +77,8 @@ const resources = {
       "10 lat doświadczenia w poligrafii": "bu",
       "Silnik naszego zespołu. Dokładniej twórca silników. Odpowiedzialny za to, żeby klient mógł łatwo zarządzać swoją stroną. Pasjonat Jury Krakowsko-Częstochowskiej, gdzie spędza większość weekendów.":
         "bu123",
-      "Lubi wypić. Uważa, że 0.7 na dwóch to nie alkohol": "bu",
-      "Odpowiedzialny za to, żeby strona nie była kolejnym nudnym Wordpressem. Podobnie jak Maciek jest pasjonatem Jury Krakowsko-Częstochowskiej. Wolny czas lubi spędzać również przy grach planszowych oraz karciankach.":
+        'Wyznawca powiedzenia Carpe Diem - "Żyj chwilą" i tak właśnie stara się żyć zarówno przy realizacji nowych projektów jak i w życiu osobistym. Pełen pasji i pomysłów. Zimą wielbiciel narciastwa. Wiosną lubi pieszewędrówki po górach i współne rodzinne wycieczki rowerowe. Kreatywna i pozytywna osoba w naszym zespole.': "bu",
+        'Odpowiedzialny za to, żeby strona nie była "kolejnym nudnym Wordpressem". W naszym zespole dba o aspekt wiuzalny projektów, a do każdego pochodzi indywidualnie. Wolny czas spędza uprawiająć kolarsto górskie któremu poświęca się od ponad 15 lat, oraz przy grach planszowych i karciankach.':
         "bu",
       "Masz pytania?": "bu",
       "Skontaktuj sie z nami": "bu",
@@ -89,7 +90,8 @@ const resources = {
       Wiadomość: "bu",
       "Musisz zaakceptować politykę prywatności": "bu",
       Wyślij: "bu",
-      "Wszelkie Prawa Zastrzeżone":"bu"
+      "Wszelkie Prawa Zastrzeżone":"bu",
+      "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych oraz ogólnym rozporządzeniem o ochronie danych osobowych w związku z realizacją zgłoszenia. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem/am poinformowany/a, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Evastigo.":"bu"
     },
   },
 };

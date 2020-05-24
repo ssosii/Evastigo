@@ -23,14 +23,14 @@ const Team = () => {
           img={lukasz}
           name="Łukasz Sosnecki"
           position="Web Developer/Designer"
-          describe={t('Odpowiedzialny za to, żeby strona nie była kolejnym nudnym Wordpressem. Podobnie jak Maciek jest pasjonatem Jury Krakowsko-Częstochowskiej. Wolny czas lubi spędzać również przy grach planszowych oraz karciankach.')}
+          describe={t('Odpowiedzialny za to, żeby strona nie była "kolejnym nudnym Wordpressem". W naszym zespole dba o aspekt wiuzalny projektów, a do każdego pochodzi indywidualnie. Wolny czas spędza uprawiająć kolarsto górskie któremu poświęca się od ponad 15 lat, oraz przy grach planszowych i karciankach.')}
         />
 
         <TeamMember
           img={sebastian}
           name="Sebastian Sokół"
           position="Designer/Account Manager"
-          describe={t("Lubi wypić. Uważa, że 0.7 na dwóch to nie alkohol")}
+          describe={t('Wyznawca powiedzenia Carpe Diem - "Żyj chwilą" i tak właśnie stara się żyć zarówno przy realizacji nowych projektów jak i w życiu osobistym. Pełen pasji i pomysłów. Zimą wielbiciel narciastwa. Wiosną lubi pieszewędrówki po górach i współne rodzinne wycieczki rowerowe. Kreatywna i pozytywna osoba w naszym zespole.')}
         />
 
       </div>

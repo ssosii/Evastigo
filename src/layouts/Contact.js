@@ -130,10 +130,9 @@ const Contact = () => {
               />
               <i class="state" aria-hidden="true"></i>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                libero arcu, vulputate sit amet mattis sit amet, ultrices in
-                erat. Aenean suscipit arcu ac lorem lacinia ut scelerisque
-                turpis commodo.
+                {t(
+                  "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych oraz ogólnym rozporządzeniem o ochronie danych osobowych w związku z realizacją zgłoszenia. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem/am poinformowany/a, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest Evastigo."
+                )}
               </span>
             </label>
           </div>
