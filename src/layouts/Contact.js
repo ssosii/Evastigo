@@ -4,14 +4,17 @@ import bg from "../img/bg.svg";
 import contact from "../img/contact.svg";
 import API from "./../helper/api";
 
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
   const [isAccept, setIsAccept] = useState(false);
   const [isSuccess, setSuccess] = useState("");
-
   const [errors, setErrors] = useState({});
+  const { t, i18n } = useTranslation();
+
   let style = {
     width: "100%",
     color: "white",
@@ -22,16 +25,16 @@ const Contact = () => {
     setSuccess(false);
     let errors = {};
     if (name.length == 0) {
-      errors["name"] = "Musisz wypełnić imię";
+      errors["name"] = t("Musisz wypełnić imię");
     }
     if (email.length == 0) {
-      errors["email"] = "Musisz wypełnić email";
+      errors["email"] = t("Musisz wypełnić email");
     }
     if (content.length == 0) {
-      errors["content"] = "Musisz wypełnić treść wiadomości";
+      errors["content"] = t("Musisz wypełnić treść wiadomości");
     }
     if (isAccept == false) {
-      errors["isAccept"] = "Musisz zaakceptować politykę prywatności";
+      errors["isAccept"] = t("Musisz zaakceptować politykę prywatności");
     }
     setErrors(errors);
     const isValid = Object.keys(errors).length == 0 ? true : false;
@@ -55,8 +58,9 @@ const Contact = () => {
 
       <div class="contact-box">
         <span style={style}>
-          <b>Masz pytania?</b> Skontaktuj sie z nami:
+          <b>{t("Masz pytania?")}</b> {t("Skontaktuj sie z nami")}:
         </span>
+
         {isSuccess && <div class="form-success">Mail wysłany poprawnie</div>}
         <form
           class="form"
@@ -67,7 +71,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <div class="form-row">
-            <label for="field-name">Imię</label>
+            <label for="field-name">{t("Imię")}</label>
             {errors["name"] && <div class="form-error">{errors["name"]}</div>}
             <input
               onChange={(e) => setName(e.target.value)}
@@ -81,7 +85,7 @@ const Contact = () => {
             />
           </div>
           <div class="form-row">
-            <label for="field-email">Email</label>
+            <label for="field-email">{t("Email")}</label>
             {errors["email"] && <div class="form-error">{errors["email"]}</div>}
             <input
               onChange={(e) => setEmail(e.target.value)}
@@ -95,7 +99,7 @@ const Contact = () => {
             />
           </div>
           <div class="form-row">
-            <label for="field-message">Wiadomość</label>
+            <label for="field-message">{t("Wiadomość")}</label>
             {errors["content"] && (
               <div class="form-error">{errors["content"]}</div>
             )}
@@ -113,7 +117,7 @@ const Contact = () => {
             {errors["isAccept"] && (
               <div class="form-error">{errors["isAccept"]}</div>
             )}
-          
+
             <label class="checkbox-cnt">
               <input
                 onChange={(e) => setIsAccept(e.target.value)}
@@ -135,7 +139,7 @@ const Contact = () => {
           </div>
           <div class="form-row">
             <button type="submit" class="submit-btn">
-              Wyślij
+              {t("Wyślij")}
             </button>
           </div>
         </form>

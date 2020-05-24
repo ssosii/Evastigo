@@ -9,20 +9,22 @@ import events from "../img/events_white.svg";
 import gadgets from "../img/pendrive_white.svg";
 import bill from "../img/billboard_white.svg";
 import material from "../img/material_white.svg";
+import { useTranslation } from "react-i18next";
 
 const Offer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <div className="offer">
         <div class="offer-box">
-          <Offerbox id="1" text="Identyfikacja wizualna" img={logo} />
-          <Offerbox id="2" text="Projektowanie stron www" img={code} />
-          <Offerbox id="3" text="Projekty graficzne" img={graphic} />
-          <Offerbox id="4" text="Drukarnia" img={printer} />
-          <Offerbox id="5" text="Sceneografia" img={events} />
-          <Offerbox id="6" text="Materiały reklamowe" img={material} />
-          <Offerbox id="7" text="Gadżety reklamowe" img={gadgets} />
-          <Offerbox id="8" text="Reklama zewnętrzna" img={bill} />
+          <Offerbox id="1" text={t("Identyfikacja wizualna")} img={logo} />
+          <Offerbox id="2" text={t("Projektowanie stron www")} img={code} />
+          <Offerbox id="3" text={t("Projekty graficzne")} img={graphic} />
+          <Offerbox id="4" text={t("Drukarnia")} img={printer} />
+          <Offerbox id="5" text={t("Sceneografia")} img={events} />
+          <Offerbox id="6" text={t("Materiały reklamowe")} img={material} />
+          <Offerbox id="7" text={t("Gadżety reklamowe")} img={gadgets} />
+          <Offerbox id="8" text={t("Reklama zewnętrzna")} img={bill} />
         </div>{" "}
       </div>
     </>

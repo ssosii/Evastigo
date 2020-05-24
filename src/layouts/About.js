@@ -12,6 +12,8 @@ import img6 from "../img/06.svg";
 import img7 from "../img/07.svg";
 import img8 from "../img/08.svg";
 
+import { useTranslation, Translation } from "react-i18next";
+
 class About extends Component {
   state = {
     position: 0,
@@ -32,7 +34,7 @@ class About extends Component {
       }
     });
   }
-  
+
   animationFigures() {
     const el = this.myRef.current.querySelector(".about-img");
     let listener = this.myRef.current.querySelector(".listener");
@@ -50,35 +52,30 @@ class About extends Component {
         id="about"
         className="about"
         onMouseMove={this.animationFigures.bind(this)}
-        
       >
         <div className="about-box-1">
           <span>
             <img src={aboutimg} alt="" />
-            <p>
-              Naszą firmę tworzą ludzie kreatywni, zainteresowani otaczającym
-              nas światem marketingu. Myślimy nieszablonowo i staramy się, żeby
-              nasze projekty również takie pozostały. Projektujemy strony www,
-              które są intuicyjne, proste w obsłudze oraz interaktywne.
-              Tworzenie stron internetowych odbywa się u nas na podstawie
-              gotowych oraz sprawdzonych modeli w przypadku większych serwisów
-              lub na podstawie indywidualnych wytycznych otrzymanych od klienta.
-              Każdy projekt jest inny i do każdego podchodzimy indywidualnie.
-            </p>
-            <p>
-              Grafika, reklama zewnętrzna oraz szeroko pojęta poligrafia to
-              kolejna gałąź naszej działalności, w której chętnie podejmiemy się
-              współpracy z Państwem. Zajmujemy się przygotowywaniem projektów
-              materiałów reklamowych, które pozostają spójne z wizerunkiem
-              Państwa firmy, dzięki czemu pasują one do marki która jest
-              kreowana oraz budzą pozytywne skojarzenia. Ulotki, broszury,
-              wizytówki... aż do druku na drewnie - oferujemy Państwu produkty
-              nieszablonowe, które będą nieodzownym elementem Państwa wizerunku.
-              Nie mają Państwo pomysłu, ale wiadomy jest cel?{" "}
-              <b>Zapraszamy do kontaktu!</b> Nie możemy doczekać się wspólnego
-              projektu z przemyślanym, zaplanowanym i konkurencyjnym elementem
-              strategii biznesowej.
-            </p>
+            
+              <Translation>
+                {(t, { i18n }) => (
+                  <p>
+                    {t(
+                      "onas1"
+                    )}
+                  </p>
+                )}
+              </Translation>
+         
+              <Translation>
+                {(t, { i18n }) => (
+                  <p>
+                    {t(
+                      "onas2"
+                    )}
+                  </p>
+                )}
+              </Translation>
           </span>
         </div>
         <div className="about-box-2">
@@ -110,8 +107,7 @@ class About extends Component {
                 <AtutContent
                   style={this.style}
                   img={img5}
-                  text="Wiedza,
-                                  profesjonalizm, konsekwencja"
+                  text="Wiedza, profesjonalizm, konsekwencja"
                 />
                 <AtutContent
                   style={this.style}

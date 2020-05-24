@@ -6,6 +6,10 @@ import OfferImg1 from "../img/offer.svg";
 import OfferImg2 from "../img/offer2.svg";
 import arrow from "../img/arrow_down-blue.svg";
 
+import TranslationFlags from "./../components/TranslationFlags";
+
+import { Translation } from "react-i18next";
+
 class Header extends Component {
   state = {
     activeElement: 0,
@@ -38,6 +42,7 @@ class Header extends Component {
     return (
       <>
         <div className="header">
+       <TranslationFlags />
           <Navigation
             handleMenuResponsive={this.handleMenuResponsive}
             isMenuResponsive={this.state.isMenuResponsive}
@@ -64,6 +69,10 @@ class Header extends Component {
           isMenuResponsive={this.state.isMenuResponsive}
           handleMenuResponsive={this.handleMenuResponsive}
         />
+
+        <Translation>
+          {(t, { i18n }) => <p>{t("Welcome to React")}</p>}
+        </Translation>
       </>
     );
   }

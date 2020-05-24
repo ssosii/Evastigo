@@ -5,6 +5,22 @@
   overflow: hidden;
   z-index: 2;
 
+
+  &__translation {
+    position:absolute;
+    top:0;
+    right:0;
+    z-index: 999;
+    margin: 10px 10px 0 0;
+    @include mobile(){
+      display:none;
+    }
+    img {
+      max-width:20px;
+      margin-right:10px;
+    }
+  }
+
   .overlay {
     position: absolute;
     width: 100%;

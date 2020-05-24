@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Logo from "../img/logo.svg";
+import { useTranslation } from "react-i18next";
 
 const Navigation = ({ handleMenuResponsive,isMenuResponsive}) => {
+  const { t, i18n } = useTranslation();
   const onClickMenuResponsive = (e)=>{
     handleMenuResponsive(!isMenuResponsive);
   }
@@ -12,16 +14,16 @@ const Navigation = ({ handleMenuResponsive,isMenuResponsive}) => {
         <div class="menu">
           <ul className="menu-list">
             <li>
-              <a href="#about">Kim jesteśmy?</a>
+              <a href="#about">{t("Kim jesteśmy?")}</a>
             </li>
             <li>
-              <a href="#offer">Oferta</a>
+              <a href="#offer">{t("Oferta")}</a>
             </li>
             <li>
-              <a href="#portfolio">Realizacje</a>
+              <a href="#portfolio">{t("Realizacje")}</a>
             </li>
             <li>
-              <a href="#contact">Kontakt</a>
+              <a href="#contact">{t("Kontakt")}</a>
             </li>
           </ul>
         </div>
