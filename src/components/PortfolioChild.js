@@ -16,7 +16,7 @@ const PortfolioChild = ({ link, text, img }) => {
           isShowDescription ? "describe--visible" : ""
         }`}
       >
-        <a href={link}>{text}</a>
+        <a target="_blank" href={link}>{text}</a>
       </div>
       <div className="more_info">
         {/* <i className="far fa-plus-square"></i> */}

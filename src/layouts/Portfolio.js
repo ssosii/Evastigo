@@ -18,32 +18,32 @@ const Portfolio = () => {
       <div className="portfolio-container">
         <img className="portfolio-img" src={portfolio} alt="portfolio-img" />
         <PortfolioChild
-          link="www.edugrupa.pl"
+          link="http://www.edugrupa.pl"
           text="www.edugrupa.pl"
           img={edugrupa}
         />
         <PortfolioChild
-          link="www.prius.com.pl"
+          link="http://www.prius.com.pl"
           text="www.prius.com.pl"
           img={prius}
         />
         <PortfolioChild
-          link="www.biotapharma.pl"
+          link="http://www.biotapharma.pl"
           text="www.biotapharma.pl"
           img={biota}
         />
         <PortfolioChild
-          link="www.photoriss.com"
+          link="http://www.photoriss.com"
           text="www.photoriss.com"
           img={riss}
         />
         <PortfolioChild
-          link="www.socialprintbg.com"
+          link="http://www.socialprintbg.com"
           text="www.socialprintbg.com"
           img={social}
         />
         <PortfolioChild
-          link="www.sostravel.it"
+          link="http://www.sostravel.it"
           text="www.sostravel.it"
           img={travel}
         />

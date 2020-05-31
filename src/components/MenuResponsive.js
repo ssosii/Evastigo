@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Logo from "../img/logo.svg";
 import { useTranslation } from "react-i18next";
+import TranslationFlags from "./TranslationFlags";
 
 const MenuResponsive = ({ isMenuResponsive, handleMenuResponsive }) => {
   const { t, i18n } = useTranslation();
   const onClickClose = (e) => {
     handleMenuResponsive(!isMenuResponsive);
   };
-  
+
   return (
     <div
       className={`menu-responsive ${
@@ -20,18 +21,28 @@ const MenuResponsive = ({ isMenuResponsive, handleMenuResponsive }) => {
       <div className="menu-responsive__logo">
         <img className="menu-responsive__logo-img" src={Logo} />
       </div>
+
       <ul className="menu-responsive__list">
+      <TranslationFlags />vvvvvvvvv
         <li>
-          <a onClick={onClickClose} href="#about">{t("Kim jesteśmy?")}</a>
+          <a onClick={onClickClose} href="#about">
+            {t("Kim jesteśmy?")}
+          </a>
         </li>
         <li>
-          <a onClick={onClickClose} href="#offer">{t("Oferta")}</a>
+          <a onClick={onClickClose} href="#offer">
+            {t("Oferta")}
+          </a>
         </li>
         <li>
-          <a onClick={onClickClose} href="#portfolio">{t("Realizacje")}</a>
+          <a onClick={onClickClose} href="#portfolio">
+            {t("Realizacje")}
+          </a>
         </li>
         <li>
-          <a onClick={onClickClose} href="#contact">{t("Kontakt")}</a>
+          <a onClick={onClickClose} href="#contact">
+            {t("Kontakt")}
+          </a>
         </li>
       </ul>
     </div>

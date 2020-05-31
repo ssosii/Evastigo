@@ -30,7 +30,7 @@
 
         .portfolio-box {
             width: 50%;
-            height: 350px;
+            height: 320px;
             border: 1px solid white;
             position: relative;
             opacity: 1;
@@ -58,6 +58,9 @@
                 &--visible {
                     opacity: 0;
                     outline: 10px solid red;
+                }
+                @include mobile(){
+                    line-height: 200px;
                 }
             }
 
